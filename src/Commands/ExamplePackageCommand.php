@@ -30,9 +30,9 @@ class ExamplePackageCommand extends Command
     private function Palindrome(string $command)
     {
         if (strrev($command) == $command) {
-            return "Palindrome";
+            return 'Palindrome';
         } else {
-            return "Not Palindrome";
+            return 'Not Palindrome';
         }
     }
 
@@ -40,20 +40,20 @@ class ExamplePackageCommand extends Command
     {
         for ($i = 0; $i < $size; $i++) {
             for ($j = $size - $i; $j > 1; $j--) {
-                echo " ";
+                echo ' ';
             }
             for ($j = 0; $j <= $i; $j++) {
-                echo "* ";
+                echo '* ';
             }
             echo "\n";
         }
 
         for ($i = $size - 1; $i > 0; $i--) {
             for ($j = $size - $i; $j > 0; $j--) {
-                echo " ";
+                echo ' ';
             }
             for ($j = 0; $j < $i; $j++) {
-                echo "* ";
+                echo '* ';
             }
             echo "\n";
         }

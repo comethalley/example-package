@@ -29,8 +29,9 @@ class ExamplePackageCommand extends Command
 
     private function Palindrome(string $command)
     {
-        if (strrev($command) == $command) {
-            return 'Palindrome';
+        $string = str_replace(' ', '', $command);
+        if (strrev($string) == $string) {
+            return "Palindrome";
         } else {
             return 'Not Palindrome';
         }

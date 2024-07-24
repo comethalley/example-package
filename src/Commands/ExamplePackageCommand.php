@@ -31,7 +31,7 @@ class ExamplePackageCommand extends Command
     {
         $string = str_replace(' ', '', $command);
         if (strrev($string) == $string) {
-            return "Palindrome";
+            return 'Palindrome';
         } else {
             return 'Not Palindrome';
         }
